@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <meta name="description" content="Personal website created using HTML only">
+    <meta name="keywords" content="HTML, Personal Website, Portfolio">
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Website</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#portfolio">Portfolio</a> |
+            <a href="#register">Register</a> |
+            <a href="#data">Data</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer learning HTML and building projects.</p>
+            <img src="profile.jpg" alt="My Profile Photo">
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <article>
+                <h3>Project 1</h3>
+                <p>A simple HTML project.</p>
+            </article>
+            <article>
+                <h3>Project 2</h3>
+                <p>A basic form and table.</p>
+            </article>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Register</h2>
+            <form>
+                <label>
+                    Full Name:
+                    <input type="text" placeholder="Full Name" required>
+                </label><br><br>
+
+                <label>
+                    Email:
+                    <input type="email" placeholder="Email" required>
+                </label><br><br>
+
+                <label>
+                    Course:
+                    <select>
+                        <option>Web Development</option>
+                        <option>AI</option>
+                        <option>Graphic Design</option>
+                    </select>
+                </label><br><br>
+
+                <button>Submit</button>
+            </form>
+        </section>
+
+        <!-- Data Table -->
+        <section id="data">
+            <h2>Student Data</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ram</td>
+                        <td>ram@example.com</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>Sita</td>
+                        <td>sita@example.com</td>
+                        <td>AI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label>
+                    Message:
+                    <textarea placeholder="Type your message"></textarea>
+                </label><br><br>
+                <button>Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Website</p>
+    </footer>
+
+</body>
+</html>
