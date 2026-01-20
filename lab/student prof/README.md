@@ -28,7 +28,7 @@ The objectives of this lab are to:
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - **Code Editor:** Visual Studio Code
 - **Browser:** Google Chrome
