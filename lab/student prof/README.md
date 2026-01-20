@@ -4,14 +4,14 @@
 
 ---
 
-## 📌 Student Profile Web Page
+## Student Profile Web Page
 
 This repository contains **Lab Assignment – 02**, which focuses on building a structured web page using **semantic HTML** and styling it using **basic CSS selectors**.
 The assignment strictly follows the constraints provided, without using advanced CSS features or JavaScript.
 
 ---
 
-## 🎯 Objectives of the Lab
+## Objectives of the Lab
 
 The objectives of this lab are to:
 - Create a well-structured HTML document
@@ -35,7 +35,7 @@ The objectives of this lab are to:
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 student-profile/
 -assets/
@@ -49,14 +49,14 @@ student-profile/
 
 ---
 
-## 🧱 Technologies Used
+## Technologies Used
 
 - **HTML5** (Semantic structure)
 - **CSS3** (Basic selectors only)
 
 ---
 
-## 📄 Description of Files
+## Description of Files
 
 ### `index.html`
 - Contains the structure of the Student Profile Web Page
@@ -83,7 +83,7 @@ student-profile/
 
 ---
 
-## 🔍 Inspection Task
+## Inspection Task
 
 Using the browser’s **Inspect Tool**:
 - The **student name** element demonstrates styling via an **ID selector**
@@ -102,7 +102,7 @@ These elements are documented using HTML comments inside `index.html`.
 
 ---
 
-## 📸 Screenshots Included
+## Screenshots Included
 
 The following screenshots are included to demonstrate task completion:
 1. Full view of the Student Profile Web Page
@@ -113,12 +113,12 @@ The following screenshots are included to demonstrate task completion:
 ![alt text](assets/image-2.png)
 ---
 
-## ✅ Learning Outcome
+## Learning Outcome
 
 This lab strengthened understanding of semantic HTML structure and the practical use of CSS selectors, forming a strong foundation for advanced styling techniques in future labs.
 
 ---
 
-## 📜 Academic Integrity
+## Academic Integrity
 
 This assignment is my original work and complies with the academic integrity policies of the institution.
