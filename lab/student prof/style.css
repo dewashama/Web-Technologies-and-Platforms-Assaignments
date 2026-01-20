@@ -1,0 +1,53 @@
+/* UNIVERSAL SELECTOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENT SELECTORS */
+h1 {
+    color: #1a3c6e;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* GROUP SELECTORS */
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* CLASS SELECTOR */
+.section-box {
+    border: 1px solid #999;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* ID SELECTOR */
+#student-name {
+    color: #8b0000;
+    font-weight: bold;
+}
+
+/* DESCENDANT SELECTORS */
+.course-list li {
+    color: #0b5ed7;
+    margin-left: 20px;
+}
+
+.hobby-list li {
+    color: #198754;
+    margin-left: 20px;
+}
+
+/* FOOTER ELEMENT */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
