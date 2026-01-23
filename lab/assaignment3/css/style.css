@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* Header */
+.header {
+  background: #1e3a8a;
+  color: white;
+  padding: 15px;
+}
+
+/* Navigation */
+.nav .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.nav .menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav .menu a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Intro */
+.intro {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Login */
+.login-section {
+  width: 300px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: #1e3a8a;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* Dashboard */
+.dashboard {
+  margin: 20px;
+}
+
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+/* Table */
+.table-section {
+  margin: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 20px;
+}
