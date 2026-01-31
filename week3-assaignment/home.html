@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FreshCart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50">
+
+<!-- ================= NAVBAR ================= -->
+<header class="bg-white border-b">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- TOP BAR -->
+    <div class="flex items-center justify-between h-20 gap-6">
+
+      <!-- LOGO -->
+      <div class="flex items-center gap-2">
+        <img src="assets/freshcart-logo.svg" alt="FreshCart" class="logo">
+      </div>
+
+      <!-- SEARCH + LOCATION -->
+      <div class="hidden md:flex items-center gap-3 flex-1 max-w-xl">
+
+        <!-- SEARCH -->
+        <div class="flex flex-1 border border-slate-300 rounded-lg overflow-hidden
+                    focus-within:border-green-500 transition">
+          <input
+            class="flex-1 px-4 py-2 outline-none text-sm"
+            placeholder="Search for products"
+          />
+          <button class="px-4 text-slate-500 hover:text-green-600 transition">
+            <i data-feather="search"></i>
+          </button>
+        </div>
+
+        <!-- LOCATION -->
+        <button class="flex items-center gap-2 px-4 py-2 border border-slate-300 rounded-lg
+                       text-slate-600 hover:bg-slate-600 hover:text-white hover:border-slate-600 transition">
+          <i data-feather="map-pin"></i>
+          <span class="text-sm font-medium">Location</span>
+        </button>
+      </div>
+
+      <!-- ICONS -->
+      <div class="flex items-center gap-6 text-slate-600">
+
+        <div class="relative cursor-pointer hover:text-green-600 transition">
+          <i data-feather="heart"></i>
+          <span class="badge">5</span>
+        </div>
+
+        <div class="cursor-pointer hover:text-green-600 transition">
+          <i data-feather="user"></i>
+        </div>
+
+        <div class="relative cursor-pointer hover:text-green-600 transition">
+          <i data-feather="shopping-bag"></i>
+          <span class="badge">0</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <nav class="flex items-center gap-6 pb-4 text-slate-700">
+      <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
+        All Departments
+      </button>
+
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Dropdown Menu</a>
+      <a href="#" class="nav-link">Mega Menu</a>
+      <a href="#" class="nav-link">Dashboard</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero-banner">
+  <div class="hero-content">
+    <span class="tag">Opening Sale Discount 50%</span>
+
+    <h1 class="hero-title">
+      SuperMarket For <br />
+      Fresh Grocery
+    </h1>
+
+    <p class="hero-text">
+      Introduced a new model for online grocery shopping and convenient home delivery.
+    </p>
+
+    <button class="cta-btn">Shop Now →</button>
+  </div>
+</section>
+
+<!-- ================= FEATURED CATEGORIES ================= -->
+<section class="max-w-7xl mx-auto px-6 py-14">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between mb-8">
+    <h2 class="text-2xl font-bold text-slate-800">
+      Featured Categories
+    </h2>
+
+    <!-- Visual arrows (like screenshot) -->
+    <div class="flex gap-2">
+      <span class="arrow-btn">‹</span>
+      <span class="arrow-btn">›</span>
+    </div>
+  </div>
+
+  <!-- Slider wrapper -->
+  <div class="category-slider-wrapper">
+    <div class="category-slider-track">
+
+      <!-- Cards (duplicate once for seamless scroll) -->
+      <div class="category-card">
+        <img src="assets\category-instant-food.jpg">
+        <p>Instant Food</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-tea-coffee-drinks.jpg">
+        <p>Tea, Coffee & Drinks</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-atta-rice-dal.jpg">
+        <p>Atta, Rice & Dal</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-baby-care.jpg">
+        <p>Baby Care</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-chicken-meat-fish.jpg">
+        <p>Chicken, Meat & Fish</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-cleaning-essentials.jpg">
+        <p>Cleaning Essentials</p>
+      </div>
+
+      <!-- DUPLICATE (important for smooth infinite scroll) -->
+      <div class="category-card">
+        <img src="assets\category-instant-food.jpg">
+        <p>Instant Food</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-tea-coffee-drinks.jpg">
+        <p>Tea, Coffee & Drinks</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-atta-rice-dal.jpg">
+        <p>Atta, Rice & Dal</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-baby-care.jpg">
+        <p>Baby Care</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-chicken-meat-fish.jpg">
+        <p>Chicken, Meat & Fish</p>
+      </div>
+
+      <div class="category-card">
+        <img src="assets\category-cleaning-essentials.jpg">
+        <p>Cleaning Essentials</p>
+      </div>
+
+</section>
+
+<!-- ================= PROMO BANNERS ================= -->
+<section class="max-w-7xl mx-auto px-6 py-10">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Banner 1 -->
+    <div class="promo-banner banner-fruits">
+      <div class="promo-text">
+        <h3>Fruits & Vegetables</h3>
+        <p>Get Upto <span>30%</span> Off</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+
+    <!-- Banner 2 -->
+    <div class="promo-banner banner-bakery">
+      <div class="promo-text">
+        <h3>Freshly Baked Buns</h3>
+        <p>Get Upto <span>25%</span> Off</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= POPULAR PRODUCTS ================= -->
+<section class="max-w-7xl mx-auto px-6 py-14">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between mb-8">
+    <h2 class="text-2xl font-bold text-slate-800">
+      Popular Products
+    </h2>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+    <!-- Product Card -->
+    <div class="product-card">
+      <span class="badge-sale">Sale</span>
+      <img src="assets/product-img-1.jpg" alt="">
+      <p class="product-category">Snack & Munchies</p>
+      <h3 class="product-title">Haldiram's Sev Bhujia</h3>
+      <div class="rating">★★★★★ <span>4.5</span> <span class="reviews">(149)</span></div>
+      <div class="price-row">
+        <span class="price">$18</span>
+        <span class="old-price">$24</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-2.jpg" alt="">
+      <p class="product-category">Bakery & Biscuits</p>
+      <h3 class="product-title">NutriChoice Digestive</h3>
+      <div class="rating">★★★★★ <span>4.5</span> <span class="reviews">(25)</span></div>
+      <div class="price-row">
+        <span class="price">$24</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-3.jpg" alt="">
+      <p class="product-category">Bakery & Biscuits</p>
+      <h3 class="product-title">Cadbury 5 Star Chocolate</h3>
+      <div class="rating">★★★★★ <span>5.0</span> <span class="reviews">(469)</span></div>
+      <div class="price-row">
+        <span class="price">$32</span>
+        <span class="old-price">$35</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-4.jpg" alt="">
+      <p class="product-category">Snack & Munchies</p>
+      <h3 class="product-title">Onion Flavour Potato</h3>
+      <div class="rating">★★★☆☆ <span>3.5</span> <span class="reviews">(456)</span></div>
+      <div class="price-row">
+        <span class="price">$3</span>
+        <span class="old-price">$5</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-5.jpg" alt="">
+      <p class="product-category">Instant Food</p>
+      <h3 class="product-title">Salted Instant Popcorn</h3>
+      <div class="rating">★★★★★ <span>4.5</span> <span class="reviews">(39)</span></div>
+      <div class="price-row">
+        <span class="price">$13</span>
+        <span class="old-price">$18</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <span class="badge-sale">Sale</span>
+      <img src="assets/product-img-6.jpg" alt="">
+      <p class="product-category">Dairy, Bread & Eggs</p>
+      <h3 class="product-title">Blueberry Greek Yogurt</h3>
+      <div class="rating">★★★★★ <span>4.5</span> <span class="reviews">(189)</span></div>
+      <div class="price-row">
+        <span class="price">$18</span>
+        <span class="old-price">$24</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-7.jpg" alt="">
+      <p class="product-category">Dairy, Bread & Eggs</p>
+      <h3 class="product-title">Britannia Cheese Slices</h3>
+      <div class="rating">★★★★★ <span>5.0</span> <span class="reviews">(345)</span></div>
+      <div class="price-row">
+        <span class="price">$24</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-8.jpg" alt="">
+      <p class="product-category">Instant Food</p>
+      <h3 class="product-title">Kellogg's Original Cereals</h3>
+      <div class="rating">★★★★★ <span>4.0</span> <span class="reviews">(90)</span></div>
+      <div class="price-row">
+        <span class="price">$32</span>
+        <span class="old-price">$35</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-9.jpg" alt="">
+      <p class="product-category">Snack & Munchies</p>
+      <h3 class="product-title">Slurrp Millet Chocolate</h3>
+      <div class="rating">★★★★★ <span>4.5</span> <span class="reviews">(90)</span></div>
+      <div class="price-row">
+        <span class="price">$3</span>
+        <span class="old-price">$5</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/product-img-10.jpg" alt="">
+      <p class="product-category">Dairy, Bread & Eggs</p>
+      <h3 class="product-title">Amul Butter – 500 g</h3>
+      <div class="rating">★★★★★ <span>4.5</span> <span class="reviews">(90)</span></div>
+      <div class="price-row">
+        <span class="price">$13</span>
+        <span class="old-price">$18</span>
+        <button class="add-btn">+ Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= DAILY BEST SELLS ================= -->
+<section class="max-w-7xl mx-auto px-6 py-14">
+
+  <h2 class="text-2xl font-bold text-slate-800 mb-8">
+    Daily Best Sells
+  </h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 items-stretch">
+
+    <!-- LEFT BIG BANNER -->
+    <div class="daily-banner">
+      <div class="daily-banner-content">
+        <h3>100% Organic Coffee Beans.</h3>
+        <p>Get the best deal before close.</p>
+        <button>Shop Now →</button>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARD -->
+    <div class="daily-product">
+      <img src="assets/product-img-11.jpg" alt="">
+      <p class="category">Tea, Coffee & Drinks</p>
+      <h4>Roast Ground Coffee</h4>
+
+      <div class="price-rating">
+        <div>
+          <span class="price">$13</span>
+          <span class="old">$18</span>
+        </div>
+        <span class="stars">★★★★★ <span>4.5</span></span>
+      </div>
+
+      <button class="cart-btn">+ Add to Cart</button>
+
+      <div class="timer">
+        <div><strong>982</strong><span>Days</span></div>
+        <div><strong>3</strong><span>Hours</span></div>
+        <div><strong>2</strong><span>Mins</span></div>
+        <div><strong>16</strong><span>Sec</span></div>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARD -->
+    <div class="daily-product">
+      <img src="assets/product-img-12.jpg" alt="">
+      <p class="category">Fruits & Vegetables</p>
+      <h4>Crushed Tomatoes</h4>
+
+      <div class="price-rating">
+        <div>
+          <span class="price">$13</span>
+          <span class="old">$18</span>
+        </div>
+        <span class="stars">★★★★★ <span>4.5</span></span>
+      </div>
+
+      <button class="cart-btn">+ Add to Cart</button>
+
+      <div class="timer">
+        <div><strong>1042</strong><span>Days</span></div>
+        <div><strong>3</strong><span>Hours</span></div>
+        <div><strong>2</strong><span>Mins</span></div>
+        <div><strong>16</strong><span>Sec</span></div>
+      </div>
+    </div>
+
+    <!-- PRODUCT CARD -->
+    <div class="daily-product">
+      <img src="assets/product-img-13.jpg" alt="">
+      <p class="category">Fruits & Vegetables</p>
+      <h4>Golden Pineapple</h4>
+
+      <div class="price-rating">
+        <div>
+          <span class="price">$13</span>
+          <span class="old">$18</span>
+        </div>
+        <span class="stars">★★★★★ <span>4.5</span></span>
+      </div>
+
+      <button class="cart-btn">+ Add to Cart</button>
+
+      <div class="timer">
+        <div><strong>1014</strong><span>Days</span></div>
+        <div><strong>3</strong><span>Hours</span></div>
+        <div><strong>2</strong><span>Mins</span></div>
+        <div><strong>16</strong><span>Sec</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+<section class="bg-white border-t">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <div class="feature-item">
+      <div class="feature-icon"><i data-feather="clock"></i></div>
+      <h4>10 minute grocery now</h4>
+      <p>Fast delivery from nearby FreshCart pickup stores.</p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i data-feather="gift"></i></div>
+      <h4>Best Prices & Offers</h4>
+      <p>Cheaper prices than your local supermarket.</p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i data-feather="package"></i></div>
+      <h4>Wide Assortment</h4>
+      <p>5000+ products across multiple categories.</p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon"><i data-feather="refresh-cw"></i></div>
+      <h4>Easy Returns</h4>
+      <p>Quick refunds with hassle-free returns.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-100 border-t">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+
+    <!-- TOP LINKS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+
+      <!-- Categories -->
+      <div>
+        <h5>Categories</h5>
+        <ul>
+          <li>Vegetables & Fruits</li>
+          <li>Breakfast & instant food</li>
+          <li>Bakery & Biscuits</li>
+          <li>Atta, rice & dal</li>
+          <li>Sauces & spreads</li>
+          <li>Organic & gourmet</li>
+          <li>Baby care</li>
+          <li>Cleaning essentials</li>
+          <li>Personal care</li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="mt-7">
+          <li>Dairy, bread & eggs</li>
+          <li>Cold drinks & juices</li>
+          <li>Tea, coffee & drinks</li>
+          <li>Masala, oil & more</li>
+          <li>Chicken, meat & fish</li>
+          <li>Paan corner</li>
+          <li>Pharma & wellness</li>
+          <li>Home & office</li>
+          <li>Pet care</li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h5>Get to know us</h5>
+        <ul>
+          <li>Company</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Help Center</li>
+          <li>Our Values</li>
+        </ul>
+      </div>
+
+      <!-- Consumers -->
+      <div>
+        <h5>For Consumers</h5>
+        <ul>
+          <li>Payments</li>
+          <li>Shipping</li>
+          <li>Product Returns</li>
+          <li>FAQ</li>
+          <li>Shop Checkout</li>
+        </ul>
+      </div>
+
+      <!-- Programs -->
+      <div>
+        <h5>FreshCart Programs</h5>
+        <ul>
+          <li>Gift Cards</li>
+          <li>Promos & Coupons</li>
+          <li>FreshCart Ads</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- DIVIDER -->
+    <hr class="my-10 border-slate-200">
+
+    <!-- BOTTOM BAR -->
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+
+      <!-- Payments -->
+      <div>
+        <p class="font-semibold mb-3">Payment Partners</p>
+        <div class="flex items-center gap-4 text-sm text-slate-500">
+          Visa · Mastercard · PayPal · Amex
+        </div>
+      </div>
+
+      <!-- Apps -->
+      <div class="text-center lg:text-right">
+        <p class="font-semibold mb-3">Get deliveries with FreshCart</p>
+        <div class="flex gap-4">
+          <img src="assets/appstore-btn.svg" class="h-10">
+          <img src="assets/googleplay-btn.svg" class="h-10">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- Feather Icons Init -->
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>
