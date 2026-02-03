@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>days</title>
+</head>
+<body>
+    <script>
+
+let month = 2;
+let days;
+
+switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        days = 31;
+        break;
+
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        days = 30;
+        break;
+
+    case 2:
+        days = 28; // assuming non-leap year
+        break;
+
+    default:
+        days = "Invalid month";
+}
+
+console.log("Number of days:", days);
+</script>
+</body>
+</html>
