@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f0f4f8;
+}
+
+input, select, button {
+  padding: 5px;
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.priority-High { color: red; }
+.priority-Medium { color: orange; }
+.priority-Low { color: green; }
+
+button {
+  cursor: pointer;
+}
